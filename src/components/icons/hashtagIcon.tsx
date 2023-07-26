@@ -1,9 +1,6 @@
-interface Props extends React.SVGAttributes<SVGSVGElement> {
-  fill?: string
-  className?: string
-}
+import { IconProps } from '.'
 
-function HashTagIcon({ fill, className }: Props) {
+export const HashTagIcon = ({ fill, className }: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -23,5 +20,3 @@ function HashTagIcon({ fill, className }: Props) {
     </svg>
   )
 }
-
-export default HashTagIcon
