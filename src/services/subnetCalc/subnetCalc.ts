@@ -16,9 +16,10 @@ export function IsAValidIp(ip: string) {
   return !!result
 }
 
-export function createSubnetFromIp(ip: string) {
+export function createSubnetFromIp(ip: string, mask?: string | number) {
   try {
-    return new Netmask(ip)
+    const net = new Netmask(ip, mask)
+    return net
   } catch (error) {
     if (error instanceof Error) {
       console.log(error.message)

@@ -7,12 +7,6 @@ interface Requirement {
   id: string
 }
 
-interface Requirement {
-  name: string
-  hosts: number
-  id: string
-}
-
 interface NetworkInfo {
   bitmask: number
   size: number
