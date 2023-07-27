@@ -24,7 +24,7 @@ export default function NetworkInfoCard({
     : 0
 
   useEffect(() => {
-    const timer = setTimeout(() => setProgress(networkPercent), 250)
+    const timer = setTimeout(() => setProgress(networkPercent), 300)
     return () => clearTimeout(timer)
   }, [networkPercent])
 
@@ -58,7 +58,7 @@ export default function NetworkInfoCard({
               </div>
             </div>
             {/* <Progress value={(totalRequiredHosts/(networkInfo?.size - 2))*100}/> */}
-            <Progress value={progress} />
+            <Progress value={progress} className='transition'/>
           </div>
         </main>
       </CardContent>

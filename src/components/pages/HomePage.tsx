@@ -32,7 +32,7 @@ export default function HomePage() {
 
   return (
     <div className="relative mx-8 h-screen overflow-hidden bg-white md:flex">
-      <div className="h-screen pt-8">
+      <div className="h-screen">
         <HomeHeader />
 
         <IPSelectorSection />

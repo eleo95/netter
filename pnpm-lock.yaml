@@ -33,6 +33,7 @@ specifiers:
   jsdom: ^22.1.0
   lucide-react: ^0.263.1
   netmask: ^2.0.2
+  pnpm: ^8.6.10
   postcss: ^8.4.27
   prettier: 3.0.0
   react: ^18.2.0
@@ -58,6 +59,7 @@ dependencies:
   clsx: 2.0.0
   lucide-react: 0.263.1_react@18.2.0
   netmask: 2.0.2
+  pnpm: 8.6.10
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-router-dom: 6.14.2_biqbaboplfbrettd7655fr4n2y
@@ -4739,6 +4741,12 @@ packages:
       mlly: 1.4.0
       pathe: 1.1.1
     dev: true
+
+  /pnpm/8.6.10:
+    resolution: {integrity: sha512-EBlPdgrAqmIDK6lflNm8M4lueWGM4PKJIDngt6vJ1+fmzh3e0482tg52nUjiuGvkzZ2sngA181GLqknXhAHgIg==}
+    engines: {node: '>=16.14'}
+    hasBin: true
+    dev: false
 
   /postcss-import/15.1.0_postcss@8.4.27:
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
