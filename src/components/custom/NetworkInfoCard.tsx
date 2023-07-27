@@ -58,7 +58,7 @@ export default function NetworkInfoCard({
               </div>
             </div>
             {/* <Progress value={(totalRequiredHosts/(networkInfo?.size - 2))*100}/> */}
-            <Progress value={progress} className='transition'/>
+            <Progress value={progress} />
           </div>
         </main>
       </CardContent>
