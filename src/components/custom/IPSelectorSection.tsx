@@ -22,11 +22,13 @@ export default function IPSelectorSection() {
     const { value } = e.target
 
     try {
+      setIpError('')
       setnetworkInfo(createSubnetFromIp(value, mask))
     } catch (error) {
       setnetworkInfo()
-    } finally {
-      setIpError('')
+      if (error instanceof Error) {
+        setIpError(error.message)
+      }
     }
     return setIp(value)
   }
@@ -35,7 +37,9 @@ export default function IPSelectorSection() {
       try {
         setnetworkInfo()
       } catch (error) {
-        setIpError('' + error)
+        if (error instanceof Error) {
+          setIpError(error.message)
+        }
       }
     } else {
       setIpError('')
@@ -55,6 +59,7 @@ export default function IPSelectorSection() {
           value={ip}
           className={ipError && 'border-2 border-destructive'}
         />
+
         {ipError && (
           <span className="text-xs font-semibold text-destructive">
             {ipError}

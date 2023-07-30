@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 import App from '@/components/App'
 
 describe('<App />', () => {
-  it('should render the App', () => {
+  it('should render the HomePage thru the App Component', () => {
     const { container } = render(<App />)
 
     expect(
